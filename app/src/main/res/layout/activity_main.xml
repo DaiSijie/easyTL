@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ch.maystre.gilbert.easytl.CustomSwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <WebView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".BrowserActivity"
+                android:id="@+id/webView"
+                android:visibility="visible">
+            </WebView>
+
+            <TextView
+                android:id="@+id/hello_sign"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:textAlignment="center"
+                android:visibility="visible"/>
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/loadingText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/loading"
+            android:visibility="visible"
+            android:textSize="35sp"
+            android:textColor="@color/black"
+            android:layout_margin="10dp"
+            android:gravity="center_horizontal|center_vertical"
+            />
+
+        <Button
+            android:id="@+id/reloadButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="@string/reload"
+            android:textSize="20sp"
+            android:visibility="gone"
+            android:gravity="center_horizontal"/>
+
+    </LinearLayout>
+
+</ch.maystre.gilbert.easytl.CustomSwipeRefreshLayout>

@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">easyTL</string>
+    <string name="load_faillure">Couldn\'t load. Please check your connection.</string>
+    <string name="loading">Loading&#8230;</string>
+    <string name="reload">Tap to reload</string>
+</resources>
